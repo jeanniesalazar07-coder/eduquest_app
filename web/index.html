@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="EduQuest App - Quality Education SDG" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Update this for GitHub Pages deployment -->
+    <base href="/eduquest_app/">
+
+    <title>EduQuest App</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <style>
+      /* Full-page loader */
+      body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f5f5;
+      }
+
+      .loader {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #4caf50;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg);}
+        100% { transform: rotate(360deg);}
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader"></div>
+
+    <!-- Flutter App -->
+    <script src="main.dart.js" type="application/javascript"></script>
+  </body>
+</html>
+
